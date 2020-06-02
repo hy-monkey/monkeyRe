@@ -1,0 +1,35 @@
+1、ajax是js提供的一个异步请求技术
+
+2、dom就是可以操作页面元素的叫做dom
+
+3、JavaScript是一个解释下编程语言，主要用作客户端的脚本语言，且他的解释器被添加到浏览器中
+
+4、 XMLHttpRequest是一个浏览器接口,使得Javascript可以进行HTTP(S)通信,这就是我们熟悉的AJAX。
+
+5、1创建xmlHttpRequest对象
+      2告诉aja请求地址及方式
+	open('get',url)
+      3发送请求
+     	send()
+     4获取服务器端与客户端的响应数据
+  	onreadystatechange == 200
+ 	responseText
+
+6、json是一个字符串中介，由于语言之间的不互通，造成数据传输阻塞，这时候，json充当了中介的角色
+
+7、gson(google)、
+	支持复杂的对象
+     fastjson(alibaba)、
+	速度最快，支持多类型
+     Jackjson(需要导入jackjson-databind,jackjson-core,jackjson-annotation)
+	号称最快
+
+
+9、new Option添加option的元素，给select绑定class或者id，并且使用dom获取这个class或者id
+
+10、不能重定向，不能转发，因为转发是服务器的行为，而ajax是客户端的技术，不能重定向是因为
+        ajax是局部刷新，不是页面刷新，所以无法重定向
+
+11、windows.location.href=url
+
+12、登陆，注册，Ajax上传图片，删除表格等等

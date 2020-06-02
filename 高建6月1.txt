@@ -1,0 +1,25 @@
+1、mvc是一种编程思想，目的为实现数据层，视图层和业务层的分离，从实现上来说，需要建立controller、view
+      model三个核心模块
+
+2、三层分为model,view,controller,model为数据库访问层，view为视图层，专门用来存放前端页面，controller
+     是用来处理业务逻辑的
+
+3、面向接口开发，就是在业务开发过程中制定开发规则，开发者需要遵循这个规则来进行开发
+
+4、浏览器向服务器发送请求的时候，由tomcat接受，当url请求后面跟上tomcat端口号的时候，tomcat会
+     监听这个端口号，一旦收到请求，tomcat会去处理这个请求，并且封装到HttpServletRequest和HttpServletResponse中
+
+5、request是请求，response是响应，session是一次会话的数据缓存，cookie是浏览器端的缓存
+
+6、禁用cookie，可以使用url拼接JSESSIONID或者form表单隐藏域拼接JSESSIONID
+
+7、filter是过滤器，它可以过滤一切请求，在请求到达servlet前，拦截请求，去处理在到达servlet之前需要做的事情
+     需要实现filter接口
+
+8、web.xml配置，需要filter标签，然后是filter名称，filter-class指定类所在目录 filter-mapping指定映射，filter-name
+    指定哪个过滤器需要映射，url-pattern指定拦截规则
+
+9、转发getRequestDispachterServlet.forwrad（服务器行为） ,sendRdirect()（浏览器行为）
+
+10、
+

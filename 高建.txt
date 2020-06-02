@@ -1,0 +1,31 @@
+1、什么是jdbc，说说你的理解
+     它是Java编程语言和广泛的数据库之间独立于数据库的连接标准的Java API，根本上说JDBC是一种规范，
+    它提供的接口，一套完整的，允许便捷式访问底层数据库。
+2、如果不使用jdbc，你还有其他方法操作数据库吗
+      odbc
+3、什么是mysql，你怎么理解的
+     mysq是一个开源免费的关系型数据库
+4、简单说说什么是关系型数据库，什么是非关系型数据库
+     关系型数据库，就是利用一个表的字段，能将另一个表的字段关联起来，实现两个表的关联作用
+     非关系型数据库，类似于redis，memcached，他们的结构组合是key->value的组合，结构之间
+     没办法实现关联作用
+5，简单写一下jdbc的操作步骤
+     class.form注册驱动，使用DriverManager对数据库进行连接，使用PreparedStatement方法发送
+     sql语句，并且使用excuteQuery或者excuteUpdate执行sql语句
+6、如何建立两张表的主外键联系
+     主键索引:PRIMARY KEY (id)
+     外键索引:CONSTRAINT sc_ibfk_4 FOREIGN KEY (id) REFERENCES student (id),
+7、什么是主键索引，唯一索引，你还了解其他索引吗
+      主键是唯一的，不可以为空，可以作为其他表的外键，一个表只能创建一个索引
+       唯一索引是唯一的，可以为空，不可以作为其他表的外键，一个表可以创建多个索引
+      全文索引，普通索引，联合索引
+8、索引有什么作用
+     索引是一种约束，可以加快数据库的查询速度
+9、什么是dml、dql，他们的语法是什么
+    dml:insert into table values,update set tables xxx=xxx,delete from table,select * from table
+     dql:left join select , group by order by,count等等
+10、select max(score ) as sc from student group by subject having sc > 60
+     select max(sorce)  from student where score > 60 group by subject 
+11、excute(Class clazz,Connection conn,Object ... obj) 
+
+	
